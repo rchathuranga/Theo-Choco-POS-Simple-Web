@@ -1,0 +1,86 @@
+
+@media all and (max-width: 768px){
+
+    main{
+        padding: 20px 0 0 0;
+        text-align: center;
+        height: max-content;
+    }
+
+    .customersearch{
+        width: 90%;
+        height: max-content;
+        background-color: white;
+        box-shadow: 1px 1px 20px 0 rgba(0,0,0,.22);
+        border-radius: 30px;
+        display: inline-block;
+        position: relative;
+        z-index: 10;
+        overflow: hidden;
+        border: 1.5px solid white;
+    }
+
+    .customerreview{
+        width: 90%;
+        height: max-content;
+        display: inline-block;
+        position: relative;
+        right: unset;
+        top: 10px;
+        left: 0;
+        margin-top: unset;
+        z-index: 1;
+        text-align: center;
+    }
+
+    .customerreview>:nth-child(1)>h4{
+        margin: 0;
+    }
+
+    .customerreview>:nth-child(1)>:nth-child(1){
+        position: absolute;
+        right: 20px;
+    }
+
+    .customerreview>:nth-child(1)>:nth-child(2){
+        position: absolute;
+        left: 20px;
+    }
+
+    .customerreview>:nth-child(2){
+        width: unset;
+        margin-left: 0;
+    }
+
+    .customerreview>:nth-child(2)>h4{
+        text-align: left;
+    }
+
+    .customerreview>:nth-child(3) {
+        position: relative;
+        top: -30px;
+    }
+
+    .modification{
+        width: 80%;
+        height: max-content;
+        margin: 0;
+        display: inline-block;
+        position: relative;
+        top: 5px;
+        margin-bottom: 20px;
+    }
+
+    .modification>:nth-child(1){
+        text-align: left;
+    }
+}
+
+
+@media all and (max-width: 980px) and (min-width: 768px){
+
+    .modification{
+        margin: 0 0 0 30px;
+    }
+
+}

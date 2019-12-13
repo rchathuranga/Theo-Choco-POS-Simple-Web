@@ -1,0 +1,116 @@
+
+@media all and (max-width: 768px){
+
+    main{
+        padding: 20px 0 0 0;
+        text-align: center;
+        height: max-content;
+    }
+
+    .itemview{
+        width: 90%;
+        height: max-content;
+        background-color: white;
+        box-shadow: 1px 1px 20px 0 rgba(0,0,0,.22);
+        border-radius: 30px;
+        display: inline-block;
+        position: relative;
+        z-index: 10;
+        overflow: hidden;
+        border: 1.5px solid white;
+        margin: 0;
+    }
+
+    .orderreview{
+        width: 90%;
+        height: max-content;
+        display: inline-block;
+        position: relative;
+        right: unset;
+        top: 270px;
+        left: 0;
+        margin-top: unset;
+        z-index: 1;
+        text-align: center;
+    }
+
+    .orderreview>:nth-child(1)>h4{
+        margin: 0;
+    }
+
+    .orderreview>:nth-child(1)>:nth-child(1){
+        position: absolute;
+        right: 20px;
+    }
+
+    .orderreview>:nth-child(1)>:nth-child(2){
+        position: absolute;
+        left: 20px;    }
+
+    .orderreview>:nth-child(2)>form>button{
+        left: 0;
+        right: 0;
+        margin:  auto;
+    }
+
+    .orderreview>:nth-child(2){
+        margin-left: 0;
+        width: unset;
+    }
+
+    .orderreview>:nth-child(3)>form{
+        text-align: center;
+        margin-right: 0;
+    }
+
+    .orderreview>:nth-child(3)>form>button{
+        position: relative;
+    }
+
+    .orderreview>:nth-child(3)>form>:nth-child(1){
+        top: 50px;
+        width: 40%;
+    }
+
+    .orderreview>:nth-child(3)>form>:nth-child(2){
+        top: -20px;
+        width: 70%;
+    }
+
+    .orderreview>:nth-child(3) {
+        height: 300px;
+    }
+
+
+
+    .customerview{
+        width: 80%;
+        height: max-content;
+        background-color: white;
+        box-shadow: 1px 1px 20px 0 rgba(0,0,0,.22);
+        border-bottom-right-radius: 30px;
+        border-bottom-left-radius: 30px;
+        margin: 0;
+        display: inline-block;
+        position: relative;
+        top: -670px;
+        text-align: center;
+        margin-bottom: 20px;
+    }
+
+    .customerview>:nth-child(4)>button{
+        left: 0;
+        margin-bottom: 10px;
+    }
+}
+
+@media all and (max-width: 1040px) and (min-width: 768px){
+    .orderreview>:nth-child(2)>form>button {
+        height: fit-content;
+        bottom: 0;
+    }
+
+    .customerview{
+        margin: 0 0 0 20px;
+    }
+}

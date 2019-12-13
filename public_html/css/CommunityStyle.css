@@ -1,0 +1,353 @@
+@font-face {
+    font-family: "WonderBar";
+    src: url("../assets/fonts/Wonderbar-pALD.ttf");
+}
+
+@font-face {
+    font-family: "Nexa";
+    src: url("../assets/fonts/Nexa/Nexa-Light.otf");
+    src: url("../assets/fonts/Nexa/Nexa-Bold.otf");
+}
+
+button,input{
+    height: 30px;
+}
+
+h4{
+    font-weight: unset !important;
+}
+
+nav{
+    background-color: #EBEBEB;
+}
+
+.active{
+    color: #A7D6D2 !important;
+}
+
+nav>:nth-child(3)>div>a{
+    font-family: WonderBar;
+    font-size: 20px;
+    color: #543213;
+    transition: color .5s;
+}
+
+nav>:nth-child(3)>div>a:hover{
+    transition: color .5s;
+    color: #A7D6D2;
+}
+
+nav>button>span{
+    font-family: WonderBar;
+    font-size: 20px;
+    color: #543213;
+}
+
+main{
+    background-color: #543213;
+    padding: 15px 20px 10px 3%;
+    position: relative;
+}
+
+.customersearch{
+    width: 65%;
+    height: 380px;
+    background-color: white;
+    box-shadow: 1px 1px 20px 0 rgba(0,0,0,.22);
+    border-radius: 30px;
+    display: inline-block;
+    position: relative;
+    z-index: 10;
+}
+
+.customersearch>:nth-child(1){
+    width: 100%;
+    height: 50px;
+    text-align: center;
+}
+
+.customersearch>:nth-child(1)>div {
+    text-align: center;
+    display: inline-block;
+    width: 60%;
+    min-width: 280px;
+    position: relative;
+    top: 20px;
+}
+input[type="search"]::-webkit-search-decoration,
+input[type="search"]::-webkit-search-cancel-button,
+input[type="search"]::-webkit-search-results-button,
+input[type="search"]::-webkit-search-results-decoration {
+    -webkit-appearance:none;
+}
+
+.customersearch>:nth-child(1)>div>input{
+    display: inline-block;
+    border-radius: 20px;
+    outline: none;
+    width: 100%;
+    border: 2px solid #543213;
+    font-family: Nexa;
+    font-size: 16px;
+    font-weight: normal;
+    padding-left: 10px;
+}
+
+.customersearch>:nth-child(1)>div>button{
+    width: 25%;
+    min-width: 70px;
+    position: absolute;
+    right: 0;
+    background-color: white;
+    border: 2px solid #543213;
+    border-radius: 20px;
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 15px;
+    font-family: Nexa;
+    font-size: 17px;
+    outline: none;
+}
+
+.customersearch>:nth-child(1)>div>button:hover{
+    background-color: #A7D6D2;
+}
+
+.customersearch>:nth-child(2){
+    height: 300px;
+    margin-top: 25px;
+    overflow-y: auto;
+}
+
+.customersearch>:nth-child(2)>div>div{text-align: center}
+
+.customersearch>:nth-child(2)>div>div>div{
+    border-radius: 100%;
+    width: 170px;
+    height: 170px;
+    margin-top: 30px;
+    display: inline-block;
+    background-color: #A7D6D2;
+    overflow: hidden;
+    /*padding-top: 20px;*/
+}
+
+.customersearch>:nth-child(2)>div>div>div:hover{
+    background-color: #8ec2d6;
+}
+
+.customersearch>:nth-child(2)>div>div>div>h4{
+    font-family: Nexa;
+    font-size: 20px;
+    margin: 20px;
+}
+
+
+
+
+
+
+
+
+
+
+
+.customerreview{
+    width: 42%;
+    height: 600px;
+    background-color: white;
+    box-shadow: 1px 1px 20px 0 rgba(0,0,0,.22);
+    border-radius: 30px;
+    display: inline-block;
+    position: absolute;
+    right: 5.5%;
+    margin-top: 30px;
+    z-index: 9;
+}
+
+.customerreview>:nth-child(1){
+    width: 100%;
+    height: 40px;
+    background-color: #A7D6D2;
+    border-radius: 40px;
+    padding: 6px 0 0 0;
+}
+
+.customerreview>:nth-child(1) h4{
+    font-family: WonderBar;
+    margin-left: 30%;
+    font-size: 18px;
+    display: inline;
+}
+
+.customerreview>:nth-child(1)>:nth-child(1){
+    font-family: Nexa;
+    position: absolute;
+    right: 20px;
+}
+
+.customerreview>:nth-child(2){
+    width: 70%;
+    height: 310px;
+    margin-left: 30%;
+    padding-top: 20px;
+}
+
+.customerreview>:nth-child(2)>h4{
+    border-bottom: 1.5px solid #A7D6D2;
+    font-family: Nexa;
+    margin: 25px 10px 15px 10px;
+    padding-left: 10px;
+}
+
+.customerreview>:nth-child(3){
+    width: 100%;
+    height: 230px;
+    padding-top: 20px;
+    overflow: auto;
+}
+
+.customerreview>:nth-child(3)>div>table{
+    /*color: #ff253a;*/
+    width: 100%;
+    border-collapse: collapse;
+    overflow: hidden;
+    /*margin: 10px 0;*/
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+}
+
+.customerreview>:nth-child(3)>div>table>thead{
+    text-align: center;
+}
+
+.customerreview>:nth-child(3)>div>table>thead>tr{
+    background: #543213;
+    height: 25px;
+    color: white;
+    font-family: Nexa;
+}
+
+.customerreview>:nth-child(3)>div>table>thead>tr>th:first-letter{
+    font-family: WonderBar;
+    font-weight: unset;
+}
+
+.customerreview>:nth-child(3)>div>table>thead>tr>th, td{
+    padding: 4px 15px;
+}
+
+.customerreview>:nth-child(3)>div>table>tbody>tr>th, td{
+    padding-left: 20px;
+}
+
+.customerreview>:nth-child(3)>div>table>tbody>tr{
+    border-bottom: 1px solid #dddddd;
+}
+
+.customerreview>:nth-child(3)>div>table>tbody>tr:nth-child(even){
+    background: #f3f3f3;
+}
+
+.customerreview>:nth-child(3)>div>table>tbody>tr:last-of-type{
+    border-bottom: 2px solid #543213;
+}
+
+
+.customerreview>:nth-child(3)>div>table>tbody>tr:hover{
+    color: #543213;
+    background-color: #A7D6D2;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+.modification{
+    width: 46%;
+    height: 255px;
+    background-color: white;
+    box-shadow: 1px 1px 20px 0 rgba(0,0,0,.22);
+    border-bottom-right-radius: 30px;
+    border-bottom-left-radius: 30px;
+    margin: 0 0 0 70px;
+    position: relative;
+    top: -6px;
+}
+
+.modification>:nth-child(1){
+    width: 100%;
+    height: 40px;
+    background-color: #A7D6D2;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    position: relative;
+
+}
+
+.modification>:nth-child(1) h4{
+    font-family: WonderBar;
+    padding: 12px 0 0 20px;
+    font-size: 18px;
+}
+
+.modification>:nth-child(1)>:nth-child(2){
+    position: absolute;
+    right: 25px;
+    bottom: 0;
+    top: 0;
+    margin: auto;
+    font-family: Nexa;
+}
+
+.modification>:nth-child(2){
+    padding-top: 20px;
+    padding-bottom: 10px;
+    text-align: right;
+}
+
+.modification>:nth-child(2)>input{
+    margin: 3px 0 3px 0;
+    border: 2px solid #A7D6D2;
+    display: inline-block;
+    border: 1.5px solid #A7D6D2;
+    padding-left: 10px;
+    outline: none;
+    font-family: Nexa;
+    font-size: 15px;
+}
+
+.modification>:nth-child(2)>button{
+    display: inline-block;
+    outline: none;
+    margin: 10px 20px 0 3px;
+    transition: border .2s;
+}
+
+.modification>:nth-child(2)>:nth-child(4){
+    border-radius: 20px;
+    color: red;
+    font-size: 15px;
+    font-family: Nexa;
+    background-color: white;
+    border: 1.5px solid #fff;
+}
+
+.modification>:nth-child(2)>:nth-child(4):hover{
+    border: 1.5px solid red;
+    transition: border .2s;
+}
+
+.modification>:nth-child(2)>:nth-child(5){
+    color: #A7D6D2;
+    font-family: WonderBar;
+    background-color: #543213;
+    border: 2px solid #543213;
+    border-radius: 20px;
+}

@@ -1,0 +1,97 @@
+
+nav{
+    background-color: #EBEBEB;
+}
+
+.active{
+    color: #A7D6D2 !important;
+}
+
+nav>:nth-child(3)>div>a{
+    font-family: WonderBar;
+    font-size: 20px;
+    color: #543213;
+    transition: color .5s;
+}
+
+nav>:nth-child(3)>div>a:hover{
+    transition: color .5s;
+    color: #A7D6D2;
+}
+
+nav>button>span{
+    font-family: WonderBar;
+    font-size: 20px;
+    color: #543213;
+}
+
+main{
+    background-color: #543213;
+    padding: 15px 20px 10px 20px;
+    position: relative;
+    text-align: center;
+}
+
+main>section>h3{
+    margin: 0;
+}
+
+main>:nth-child(1)>:nth-child(1) {
+    font-family: WonderBar;
+    font-size: 30px;
+}
+
+main>:nth-child(1)>:nth-child(2) {
+    font-family: Nexa;
+}
+
+main>:nth-child(2){
+    margin-top: 20px;
+}
+
+main>:nth-child(2)>article>div{
+    width: 20%;
+    height: 250px;
+    background: #A7D6D2;
+    padding: 0;
+    overflow: hidden;
+    transition: all 1s linear;
+    position: relative;
+    margin-bottom: 15px;
+}
+
+main>:nth-child(2)>article>div>h4{
+    position: absolute;
+    font-size: 40px;
+    font-family: WonderBar;
+    color: white;
+    z-index: 10;
+    left: 20px;
+    top: 250px;
+    transition: 1s;
+}
+
+main>:nth-child(2)>article>div:nth-child(even)>h4{
+    top: -45px;
+}
+
+main>:nth-child(2)>article>div:hover h4{
+    top: 20px;
+    transition: 1s;
+}
+
+
+img{
+    transition: 1s;
+}
+
+main>:nth-child(2)>article>div>div:hover{
+    filter: brightness(30%);
+    filter: blur(50%);
+    transition: .5s;
+}
+
+main>:nth-child(2)>article>div:hover img{
+    transform: scale(1.2);
+    transition: 1s;
+}

@@ -1,0 +1,91 @@
+
+@media all and (max-width: 768px){
+
+    main{
+        padding: 20px 0 0 0;
+        text-align: center;
+        height: max-content;
+    }
+
+    .itemview{
+        width: 90%;
+        height: max-content;
+        background-color: white;
+        box-shadow: 1px 1px 20px 0 rgba(0,0,0,.22);
+        border-radius: 30px;
+        display: inline-block;
+        position: relative;
+        z-index: 10;
+        overflow: hidden;
+        border: 1.5px solid white;
+    }
+
+
+    .itemmodify{
+        width: 90%;
+        height: max-content;
+        display: inline-block;
+        position: relative;
+        right: unset;
+        top: 10px;
+        left: 0;
+        margin-top: unset;
+        z-index: 1;
+        text-align: center;
+    }
+
+    .itemmodify>:nth-child(1)>h4{
+        margin: 0;
+    }
+
+    .itemmodify>:nth-child(1)>:nth-child(1){
+        position: absolute;
+        right: 20px;
+    }
+
+    .itemmodify>:nth-child(1)>:nth-child(2){
+        position: absolute;
+        left: 20px;
+    }
+
+    .itemmodify>:nth-child(2){
+        width: unset;
+        margin-left: 0;
+    }
+
+
+    .itemreview{
+        width: 80%;
+        height: max-content;
+        margin: 0;
+        display: inline-block;
+        position: relative;
+        top: 5px;
+        margin-bottom: 20px;
+    }
+
+    .itemreview>:nth-child(1){
+        text-align: left;
+    }
+
+    .itemreview>:nth-child(1)>:nth-child(2){
+        margin-left: 0;
+        position: absolute;
+        right: 20px;
+    }
+
+    .itemreview>:nth-child(1) h4{
+        display: inline-block;
+        /*padding: 12px 0 0 20px;*/
+        font-size: 18px;
+        margin: 0
+    }
+}
+
+@media all and (max-width: 1260px) and (min-width: 768px){
+    .itemreview{
+        margin: 0 0 0 40px;
+        transition: margin-left 3s;
+        height: max-content;
+    }
+}
